@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="og:title" content="Disease Predictor for Humans">
+  <meta name="author" content="Ritik ATHILKAR">
+  <meta name="og:image" content="static/favicon2.ico">
+<title>Disease Predictor</title>
+<link rel="icon" href="static/favicon2.ico?v=2" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+  display: block;
+  margin: 0%;
+  /* background-image: url(/static/doc1.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(#1d00af, #09066d);
+  padding: 10px 20px;
+ 
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0a2083;
+}
+
+li {
+  margin-left: 20px;
+  
+}
+
+a {
+  color: #ffffff;font-family:Cambria;
+
+  text-decoration: none;
+}
+
+.container{
+background-image:  url(/static/doc5.png);
+ height: 1000px;
+ width: 95%;
+ padding: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-size: cover;
+  position: fixed;
+  display: block;
+  position: bottom;
+}
+
+.image-text{
+font-size: 25px;
+text-align: left;
+position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(0%, -50%);
+
+
+}
+
+
+
+
+
+
+</style>
+<body>
+<nav>
+  <a href="{{ url_for('home') }}" class="logo"><img src="/static/logo7.png" height="70px" width="150px"></a>
+  <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('diabetesPage') }}">Diabetes</a></li>
+    <li><a href="{{ url_for('cancerPage') }}">Breast Cancer</a></li>
+    <li><a href="{{ url_for('heartPage') }}">Heart</a></li>
+    <li><a href="{{ url_for('kidneyPage') }}">Kidney</a></li>
+<li><a href="{{ url_for('liverPage') }}">Liver</a></li>
+<li><a href="{{ url_for('home') }}">Discription</a></li>
+<li><a href="{{ url_for('pneumoniaPage') }}">Pneumonia</a></li>
+  </ul>
+</nav>
+<div class = "container">
+<!-- <div class = "image-text">
+<h1>Making Health Care Better Together </h1>
+<p> Also you dry creeping beast multiply fourth abundantly our itsel signs bring our. Won form living. Whose dry you seasons divide given gathering let livein form beast sinthete better together these place absolute right.</p>
+</div> -->
+</div>
+ 
+
+
+
+</body>
+</html>
